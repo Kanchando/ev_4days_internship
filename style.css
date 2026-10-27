@@ -1,0 +1,1037 @@
+/* ==========================================================================
+   East Ventures 4-Days Internship Portal - EV Signature Blue & Fluid Monoline UI
+   Inspired by the East Ventures Logo (#0095D9 Cyan -> #0B4EA2 Royal Blue)
+   ========================================================================== */
+
+:root {
+  --bg: #F4F8FC;
+  --glass: rgba(255, 255, 255, 0.88);
+  --card: #FFFFFF;
+  --glass-strong: rgba(255, 255, 255, 0.98);
+  --ink: #122438;
+  --muted: #566A82;
+  --ev-cyan: #0095D9;
+  --ev-blue: #0B4EA2;
+  --ev-grad: linear-gradient(135deg, #0095D9 0%, #0B4EA2 100%);
+  --ev-grad-soft: linear-gradient(135deg, rgba(0, 149, 217, 0.10) 0%, rgba(11, 78, 162, 0.10) 100%);
+  --navy: #0B4EA2;
+  --navy-accent: #0095D9;
+  --on-navy: #FFFFFF;
+  --tint: rgba(0, 149, 217, 0.09);
+  --line: rgba(11, 78, 162, 0.13);
+  --soft: #F1F6FB;
+  --bar-gray: #CBD9E8;
+  --red-gop: #0B4EA2;
+  --blue-dem: #0095D9;
+  --amber: #0284C7;
+  --amber-dark: #0369A1;
+  --emerald: #0D9488;
+  --purple: #1D4ED8;
+  --shadow: 0 10px 28px rgba(11, 78, 162, 0.07), 0 2px 8px rgba(11, 78, 162, 0.04);
+  --shadow-sm: 0 3px 12px rgba(11, 78, 162, 0.05);
+  --scrim: rgba(18, 36, 56, 0.45);
+  /* EVロゴの丸みのある流線型ストロークに調和するスマート＆ソフトなサンセリフ */
+  --serif: "Plus Jakarta Sans", "Zen Maru Gothic", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  --sans: "Plus Jakarta Sans", "Noto Sans JP", "Hiragino Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100%;
+  background: radial-gradient(circle at 15% 0%, #E6F3FC 0%, #F2F7FC 52%, #F8FAFC 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+
+/* スマホファースト中央640pxコンテナ（backdrop-filterを置かないことで下部固定タブバーがビューポート下端に完全固定される） */
+.shell {
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  background: rgba(246, 250, 254, 0.88);
+  box-shadow: 0 0 50px rgba(11, 78, 162, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   Header (すりガラス固定トップバー + EVロゴ)
+   ========================================================================== */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1.5px solid var(--line);
+}
+
+.topbar-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 16px;
+  gap: 10px;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.topbar-logo {
+  height: 22px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.topbar-divider {
+  width: 1.5px;
+  height: 16px;
+  background: rgba(11, 78, 162, 0.18);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.topbar-title {
+  font-family: var(--serif);
+  font-size: 14.5px;
+  font-weight: 800;
+  color: var(--ev-blue);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--ev-grad-soft);
+  border: 1.5px solid rgba(0, 149, 217, 0.24);
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--ev-blue);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  flex-shrink: 0;
+}
+
+.topbar-search-btn:hover {
+  background: rgba(0, 149, 217, 0.16);
+  transform: translateY(-1px);
+}
+
+.topbar-kbd {
+  font-family: inherit;
+  font-size: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1px 6px;
+  color: var(--muted);
+}
+
+/* ==========================================================================
+   Main Content Area
+   ========================================================================== */
+#app {
+  flex: 1;
+  padding: 16px 16px 92px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section-head {
+  margin-bottom: 10px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ev-cyan);
+  background: rgba(0, 149, 217, 0.10);
+  padding: 2px 9px;
+  border-radius: 999px;
+  margin-bottom: 4px;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   Hero & Overview (EVブルー＆流線ラインアクセント)
+   ========================================================================== */
+.study-hero {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F7FD 60%, #E6F2FC 100%);
+  border: 1.5px solid rgba(0, 149, 217, 0.24);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  margin-bottom: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.study-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--ev-grad);
+}
+
+.study-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.study-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 149, 217, 0.28);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ev-blue);
+}
+
+.study-badge.amber {
+  background: #F0F7FF;
+  border-color: rgba(11, 78, 162, 0.22);
+  color: #0369A1;
+}
+
+/* ==========================================================================
+   4日間のプログラム構成カード (EVブルーグラデーションアイコン)
+   ========================================================================== */
+.puzzles-section {
+  margin-bottom: 22px;
+}
+
+.puzzles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.puzzle-visual-card {
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.puzzle-visual-card:hover, .puzzle-visual-card:active {
+  transform: translateY(-1px);
+  border-color: var(--ev-cyan);
+  box-shadow: var(--shadow);
+}
+
+.puzzle-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--serif);
+  font-weight: 800;
+  font-size: 13px;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+/* EVロゴの左(シアンブルー)から右(ロイヤルブルー)への4段階グラデーション */
+.puzzle-icon-wrap.day1 {
+  background: linear-gradient(135deg, #E0F4FF 0%, #BAE6FD 100%);
+  color: #0284C7;
+}
+.puzzle-icon-wrap.day2 {
+  background: linear-gradient(135deg, #BAE6FD 0%, #7DD3FC 100%);
+  color: #0369A1;
+}
+.puzzle-icon-wrap.day3 {
+  background: linear-gradient(135deg, #0095D9 0%, #0277BD 100%);
+  color: #FFFFFF;
+}
+.puzzle-icon-wrap.day4 {
+  background: linear-gradient(135deg, #0B4EA2 0%, #083B7D 100%);
+  color: #FFFFFF;
+}
+
+.puzzle-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.puzzle-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.puzzle-title {
+  font-family: var(--serif);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.puzzle-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--ev-blue);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   日程フィルターピル
+   ========================================================================== */
+.filter-pills-bar {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 0 14px;
+  margin-bottom: 6px;
+}
+
+.filter-pill-btn {
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  color: var(--muted);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: all 0.18s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-pill-btn.active {
+  background: var(--ev-grad);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 149, 217, 0.26);
+}
+
+/* ==========================================================================
+   Day セクションカード & タイムラインブロック
+   ========================================================================== */
+.study-section-card {
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.study-step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid var(--soft);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.study-step-tag {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--ev-blue);
+  background: rgba(0, 149, 217, 0.10);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.study-step-time {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0369A1;
+  background: var(--soft);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+/* 核心要点サマリーボックス */
+.summary-bullets-card {
+  background: linear-gradient(135deg, #F4F9FE 0%, #ECF5FC 100%);
+  border: 1px solid rgba(0, 149, 217, 0.22);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin: 10px 0;
+}
+
+.summary-bullets-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--ev-blue);
+  margin-bottom: 6px;
+}
+
+.summary-bullets-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summary-bullets-list li {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* タイムライン（EVブルー流線ライン＋ノード） */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 4px;
+  margin-top: 14px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 3px;
+  width: 2.5px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #0095D9, #0B4EA2);
+  opacity: 0.35;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-node {
+  position: absolute;
+  top: 16px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0095D9;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 2px rgba(0, 149, 217, 0.28);
+}
+
+.timeline-item.featured .timeline-node {
+  background: #0B4EA2;
+  box-shadow: 0 0 0 3px rgba(11, 78, 162, 0.25);
+  transform: scale(1.15);
+}
+
+.detail-block {
+  background: var(--soft);
+  border-radius: 14px;
+  padding: 12px 14px;
+  transition: all 0.18s ease;
+  border: 1px solid transparent;
+}
+
+.timeline-item.featured .detail-block {
+  background: linear-gradient(135deg, #F0F8FF 0%, #EBF4FC 100%);
+  border-color: rgba(0, 149, 217, 0.28);
+}
+
+.detail-block-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.detail-block-time {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--ev-cyan);
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline-item.featured .detail-block-time {
+  color: var(--ev-blue);
+}
+
+.detail-block-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: #FFFFFF;
+  color: var(--muted);
+  border: 1px solid var(--line);
+}
+
+.timeline-item.featured .detail-block-tag {
+  background: var(--ev-grad);
+  color: #fff;
+  border-color: transparent;
+}
+
+.detail-block-title {
+  font-family: var(--serif);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.detail-block-summary-list {
+  margin: 6px 0 2px;
+  padding-left: 18px;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.detail-block-summary-list li {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink);
+  opacity: 0.88;
+}
+
+/* ==========================================================================
+   SVG ダイアグラム・比較表
+   ========================================================================== */
+.diagram-canvas-card {
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+  padding: 15px 16px;
+  margin: 14px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.diagram-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--soft);
+  gap: 8px;
+}
+
+.diagram-title {
+  font-family: var(--serif);
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--ev-blue);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.diagram-subtitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.svg-diagram-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.svg-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+}
+
+/* 比較マトリックス表 */
+.compare-table-wrap {
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 1.5px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.compare-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.compare-table th, .compare-table td {
+  padding: 11px 13px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.compare-table th {
+  background: linear-gradient(135deg, #F0F8FF 0%, #E8F2FC 100%);
+  color: var(--ev-blue);
+  font-weight: 800;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.compare-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   訪問先・イベントカード
+   ========================================================================== */
+.visit-card {
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.visit-card.soshiso {
+  border-color: rgba(0, 149, 217, 0.30);
+  background: linear-gradient(180deg, #F5FAFF 0%, #FFFFFF 100%);
+}
+
+.speaker-list-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.speaker-row-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--soft);
+  border-radius: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+}
+
+.speaker-avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--ev-grad);
+  color: #FFFFFF;
+  font-family: var(--serif);
+  font-weight: 800;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(11, 78, 162, 0.22);
+}
+
+/* ==========================================================================
+   Bottom Tabbar (すりガラス下部固定ナビゲーション)
+   ========================================================================== */
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1.5px solid var(--line);
+}
+
+.tabbar-in {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  height: 62px;
+  padding: 0 6px;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.tab-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  transition: color 0.15s ease, transform 0.15s ease;
+  user-select: none;
+}
+
+.tab-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.1;
+  transition: transform 0.15s ease;
+}
+
+.tab-btn.active {
+  color: var(--ev-blue);
+  font-weight: 800;
+}
+
+.tab-btn.active svg {
+  stroke: var(--ev-cyan);
+  transform: translateY(-1px) scale(1.08);
+}
+
+/* ==========================================================================
+   サイト内全文横断検索モーダル
+   ========================================================================== */
+.search-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--scrim);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.search-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-modal {
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.96);
+  width: 92%;
+  max-width: 600px;
+  max-height: 82vh;
+  background: var(--card);
+  border: 1.5px solid rgba(0, 149, 217, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(11, 78, 162, 0.18);
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.search-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) scale(1);
+}
+
+.search-modal-head {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border-bottom: 1.5px solid var(--line);
+  gap: 10px;
+  background: var(--card);
+}
+
+.search-modal-icon {
+  color: var(--ev-cyan);
+  flex-shrink: 0;
+}
+
+.search-modal-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--ink);
+  background: transparent;
+}
+
+.search-modal-close-btn kbd {
+  font-family: inherit;
+  font-size: 11px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 2px 8px;
+  color: var(--muted);
+}
+
+.search-quick-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.search-quick-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.search-tag-chip {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 11.5px;
+  color: var(--ev-blue);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.search-tag-chip:hover {
+  background: var(--ev-grad);
+  color: #FFFFFF;
+  border-color: transparent;
+}
+
+.search-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 14px;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-result-item {
+  background: var(--soft);
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+  padding: 11px 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.search-result-item:hover {
+  background: #FFFFFF;
+  border-color: var(--ev-cyan);
+}
+
+.search-result-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-result-badge {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--tint);
+  color: var(--ev-blue);
+}
+
+.search-result-action {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--ev-cyan);
+}
+
+.search-result-title {
+  font-family: var(--serif);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.search-result-snippet {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+@keyframes pulseHighlight {
+  0% { box-shadow: 0 0 0 0 rgba(0, 149, 217, 0.50); border-color: #0095D9; }
+  50% { box-shadow: 0 0 0 8px rgba(0, 149, 217, 0.16); border-color: #0095D9; }
+  100% { box-shadow: 0 0 0 0 rgba(0, 149, 217, 0); border-color: var(--line); }
+}
+
+.target-pulse-highlight {
+  animation: pulseHighlight 2.2s ease-out;
+  border-color: #0095D9 !important;
+}
+
+/* ==========================================================================
+   画像クリック拡大ライトボックス
+   ========================================================================== */
+.zoomable-img-wrap {
+  position: relative;
+  margin: 10px 0 4px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  cursor: zoom-in;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.zoomable-img-wrap:hover {
+  transform: translateY(-1px);
+  border-color: var(--ev-cyan);
+  box-shadow: var(--shadow);
+}
+
+.zoomable-img-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(18, 36, 56, 0.76);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.img-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(10, 20, 34, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  cursor: zoom-out;
+}
+
+.img-lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.img-lightbox-target {
+  max-width: 96vw;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  transform: scale(0.95);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.img-lightbox.active .img-lightbox-target {
+  transform: scale(1);
+}
+
+.img-lightbox-close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 201;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+  padding: 7px 14px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}

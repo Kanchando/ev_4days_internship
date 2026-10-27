@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>East Ventures 4日間インターンシップ - 2026年12月プログラム</title>
+  <meta name="description" content="East Ventures 4日間インターンシップ（12/8・12/10・12/15・12/17）進行レジュメ＆実務ポータル。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css?v=20261027-evblue8">
+</head>
+<body>
+  <div class="shell">
+    <!-- すりガラス固定ヘッダー -->
+    <header class="topbar">
+      <div class="topbar-in">
+        <div class="topbar-brand">
+          <img src="ev-logo.png" alt="East Ventures" class="topbar-logo">
+          <span class="topbar-divider"></span>
+          <h1 class="topbar-title" id="topbar-title">全日程レジュメ</h1>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button type="button" class="topbar-search-btn" id="open-global-search-btn" title="サイト内横断検索（⌘K）">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span>横断検索</span>
+            <kbd class="topbar-kbd">⌘K</kbd>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ表示エリア -->
+    <main id="app">
+      <!-- JavaScriptにより動的レンダリング -->
+    </main>
+
+    <!-- 画面下部固定ボトムタブバー -->
+    <div class="tabbar">
+      <nav class="tabbar-in" aria-label="メインナビゲーション">
+        <a href="#/agenda" class="tab-btn active" data-tab="agenda">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 1-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          <span>全日程レジュメ</span>
+        </a>
+        <a href="#/workshops" class="tab-btn" data-tab="workshops">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>資料</span>
+        </a>
+        <a href="#/visits" class="tab-btn" data-tab="visits">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>訪問先・イベント</span>
+        </a>
+        <a href="#/people" class="tab-btn" data-tab="people">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>EVメンバー</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- サイト内全文横断検索モーダル（Cmd+K） -->
+    <div class="search-modal-backdrop" id="search-modal-backdrop"></div>
+    <div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="サイト内横断検索">
+      <div class="search-modal-head">
+        <svg class="search-modal-icon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="search" id="global-search-input" class="search-modal-input" placeholder="キーワードで検索（例: 創志荘、ロールアップ、ポイ活、Meltly、法人設立）" autocomplete="off">
+        <button type="button" id="search-modal-close" class="search-modal-close-btn" aria-label="閉じる">
+          <kbd>ESC</kbd>
+        </button>
+      </div>
+      <!-- クイック検索サジェストピル -->
+      <div class="search-quick-tags" id="search-quick-tags">
+        <span class="search-quick-label">よく使う検索：</span>
+        <button type="button" class="search-tag-chip" data-query="創志荘 ロールアップ">創志荘・ロールアップ</button>
+        <button type="button" class="search-tag-chip" data-query="HIVE 法人設立">HIVE・法人設立</button>
+        <button type="button" class="search-tag-chip" data-query="投資委員会 ポイ活">投資委員会（ポイ活）</button>
+        <button type="button" class="search-tag-chip" data-query="Meltly 日本トレカセンター">Meltly・トレカ比較</button>
+        <button type="button" class="search-tag-chip" data-query="ソーシング DM">ソーシング・DM送信</button>
+      </div>
+      <div class="search-modal-body" id="global-search-results"></div>
+    </div>
+
+    <!-- 画像クリック拡大ライトボックスモーダル -->
+    <div class="img-lightbox" id="img-lightbox" role="dialog" aria-modal="true" aria-label="画像拡大表示">
+      <button type="button" class="img-lightbox-close" id="img-lightbox-close" aria-label="閉じる">✕ 閉じる</button>
+      <img src="" alt="" class="img-lightbox-target" id="img-lightbox-target">
+    </div>
+  </div>
+
+  <script src="data.js?v=20261027-evblue8"></script>
+  <script src="app.js?v=20261027-evblue8"></script>
+</body>
+</html>
