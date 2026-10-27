@@ -431,7 +431,7 @@
 
             ${v.business_summary && v.business_summary.length > 0 ? `
               <div class="summary-bullets-card" style="margin: 10px 0;">
-                <div class="summary-bullets-head">事業・プロダクト概要まとめ</div>
+                <div class="summary-bullets-head">${escapeHtml(v.summary_head || '事業・プロダクト概要まとめ')}</div>
                 <ul class="summary-bullets-list">
                   ${v.business_summary.map(bs => `<li>${escapeHtml(bs)}</li>`).join('')}
                 </ul>
