@@ -119,6 +119,44 @@
         </div>
       </section>
 
+      <!-- 集合場所・会場マップ一覧（六本木オフィス・HIVE SHIBUYA・創志荘） -->
+      ${DATA.site.venues && DATA.site.venues.length > 0 ? `
+        <section class="puzzles-section" style="margin-bottom: 20px;">
+          <div class="section-head" style="margin-bottom: 8px;">
+            <h2 class="section-title" style="font-size: 17px;">📍 集合場所・会場マップ</h2>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            ${DATA.site.venues.map(vn => `
+              <div class="study-section-card" id="${escapeHtml(vn.id)}" style="margin-bottom: 0; padding: 13px 15px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;">
+                  <div style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
+                    <span style="font-family: var(--serif); font-size: 15px; font-weight: 800; color: var(--ink);">
+                      ${escapeHtml(vn.name)}
+                    </span>
+                    <span style="font-size: 11.5px; font-weight: 800; color: #FFFFFF; background: var(--ev-grad); padding: 2px 9px; border-radius: 999px;">
+                      ${escapeHtml(vn.floor)}
+                    </span>
+                    <span style="font-size: 11px; font-weight: 700; color: var(--ev-blue); background: var(--soft); padding: 2px 8px; border-radius: 999px;">
+                      ${escapeHtml(vn.days_badge)}
+                    </span>
+                  </div>
+                  <a href="${escapeHtml(vn.map_url)}" target="_blank" rel="noopener noreferrer"
+                     style="display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 800; color: var(--ev-blue); background: var(--soft); border: 1px solid var(--line); padding: 4px 10px; border-radius: 999px; text-decoration: none;">
+                    📍 Googleマップで開く ↗
+                  </a>
+                </div>
+                <div style="font-size: 11.5px; color: var(--muted); margin-bottom: 8px;">
+                  ${escapeHtml(vn.address)}
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--line); height: 165px; background: var(--soft);">
+                  <iframe src="${escapeHtml(vn.map_embed_url)}" style="width: 100%; height: 100%; border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      ` : ''}
+
       <!-- 日程絞り込みピル -->
       <div class="filter-pills-bar">
         <button type="button" class="filter-pill-btn ${dayFilter === 'all' ? 'active' : ''}" data-day-filter="all">全4日間を表示</button>
@@ -145,8 +183,20 @@
               ${escapeHtml(dMain)}
               ${dSub ? `<span style="display: block; font-size: 13px; font-weight: 600; color: var(--muted); margin-top: 2px;">${escapeHtml(dSub)}</span>` : ''}
             </h2>
-            <div style="font-size: 12px; font-weight: 700; color: var(--ev-cyan); margin-bottom: 10px;">
-              📍 ${escapeHtml(day.location)}
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;">
+              <div style="font-size: 12px; font-weight: 700; color: var(--ev-cyan);">
+                📍 ${escapeHtml(day.location)}
+              </div>
+              ${day.map_links && day.map_links.length > 0 ? `
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  ${day.map_links.map(ml => `
+                    <a href="${escapeHtml(ml.url)}" target="_blank" rel="noopener noreferrer"
+                       style="display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; color: var(--ev-blue); background: var(--soft); border: 1px solid var(--line); padding: 3px 9px; border-radius: 999px; text-decoration: none;">
+                      🗺️ ${escapeHtml(ml.label)} Map ↗
+                    </a>
+                  `).join('')}
+                </div>
+              ` : ''}
             </div>
 
             <!-- タイムライン -->
@@ -399,14 +449,28 @@
             <h2 style="font-family: var(--serif); font-size: 17px; font-weight: 800; color: var(--ink); margin-bottom: 4px;">
               ${escapeHtml(v.name)}
             </h2>
-            <div style="font-size: 12px; font-weight: 700; color: var(--ev-cyan); margin-bottom: 10px;">
-              📍 ${escapeHtml(v.location)}
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;">
+              <div style="font-size: 12px; font-weight: 700; color: var(--ev-cyan);">
+                📍 ${escapeHtml(v.location)}
+              </div>
+              ${v.map_url ? `
+                <a href="${escapeHtml(v.map_url)}" target="_blank" rel="noopener noreferrer"
+                   style="display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 800; color: var(--ev-blue); background: var(--soft); border: 1px solid var(--line); padding: 4px 10px; border-radius: 999px; text-decoration: none;">
+                  📍 Googleマップで開く ↗
+                </a>
+              ` : ''}
             </div>
 
             ${v.image_url ? `
               <div class="zoomable-img-wrap" data-zoom-src="${escapeHtml(v.image_url)}" data-zoom-alt="${escapeHtml(v.name)}">
                 <img src="${escapeHtml(v.image_url)}" alt="${escapeHtml(v.name)}" style="width: 100%; height: auto; display: block;">
                 <span class="zoomable-img-badge">🔍 クリックして拡大</span>
+              </div>
+            ` : ''}
+
+            ${v.map_embed_url ? `
+              <div style="margin: 10px 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); height: 175px; background: var(--soft);">
+                <iframe src="${escapeHtml(v.map_embed_url)}" style="width: 100%; height: 100%; border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             ` : ''}
 

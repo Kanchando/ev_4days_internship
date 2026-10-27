@@ -28,6 +28,35 @@ window.INTERN_DATA = {
         title: "VC実務＆投資先訪問DAY：創志荘・Meltly・トレカ",
         description: "LP会議・投資委員会ロープレの後、本郷・創志荘でのロールアップ経営パネル、Meltly・日本トレカセンターの2社連続訪問と4日間の総括。"
       }
+    ],
+    venues: [
+      {
+        id: "venue-roppongi",
+        name: "六本木オフィス",
+        floor: "ビルの5B",
+        days_badge: "DAY 1・DAY 2・DAY 4",
+        address: "〒106-0032 東京都港区六本木7-3-12 六本木インターナショナル・ビル 5B",
+        map_url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79",
+        map_embed_url: "https://maps.google.com/maps?q=35.6659332,139.728456+(%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%83%BB%E3%83%93%E3%83%AB+5B)&hl=ja&z=16&output=embed"
+      },
+      {
+        id: "venue-hive",
+        name: "HIVE SHIBUYA",
+        floor: "Magnet 3F＆4F",
+        days_badge: "DAY 3（14:00集合）",
+        address: "東京都渋谷区神南1-23-10 MAGNET by SHIBUYA109 3F＆4F",
+        map_url: "https://maps.app.goo.gl/DkVZoddnvBk5gi2W8",
+        map_embed_url: "https://maps.google.com/maps?q=35.6597925,139.7009365+(MAGNET+by+SHIBUYA+109)&hl=ja&z=16&output=embed"
+      },
+      {
+        id: "venue-soshiso",
+        name: "創志荘",
+        floor: "本郷イベント会場",
+        days_badge: "DAY 4（12:00〜13:00）",
+        address: "東京都文京区本郷（創志荘）",
+        map_url: "https://maps.app.goo.gl/sSUiYwFtf453LdzM8",
+        map_embed_url: "https://maps.google.com/maps?q=35.7159573,139.7623844+(%E5%89%B5%E5%BF%97%E8%8D%98)&hl=ja&z=16&output=embed"
+      }
     ]
   },
 
@@ -38,18 +67,21 @@ window.INTERN_DATA = {
       day_code: "DAY 1",
       date: "12月8日（火）",
       hours: "10:45〜18:00",
-      meeting_time: "10:45 六本木オフィス集合",
+      meeting_time: "10:45 六本木オフィス（ビルの5B）集合",
       title: "座学DAY：VC・スタートアップの歴史とEast Ventures",
       theme: "世界・日本のスタートアップ史とシードVC実務の全体像を掴む",
       badge: "座学＆面談同席",
       badge_type: "lecture",
-      location: "六本木オフィス（ランチ：ソウルフード巡り①）",
+      location: "六本木オフィス：ビルの5B（ランチ：ソウルフード巡り①）",
+      map_links: [
+        { label: "六本木オフィス（ビルの5B）", url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79" }
+      ],
       short_desc: "世界・日本のVC史 ／ 村上さんMTG同席 ／ 日本のスタートアップと産業 ／ シードVC実務解説",
       summary: "世界・日本のスタートアップ史とEVの投資スタイルを学び、実際の面談同席や講義でシードVCの全体像を掴みます。",
       timeline: [
         {
           time: "10:45〜11:15",
-          title: "六本木オフィス集合／オリエンテーション、自己紹介、4日間のゴール設定",
+          title: "六本木オフィス（ビルの5B）集合／オリエンテーション、自己紹介、4日間のゴール設定",
           tag: "オリエン",
           details: []
         },
@@ -134,12 +166,15 @@ window.INTERN_DATA = {
       day_code: "DAY 2",
       date: "12月10日（木）",
       hours: "9:00〜18:00",
-      meeting_time: "9:00 集合",
+      meeting_time: "9:00 六本木オフィス（ビルの5B）集合",
       title: "ロープレ＆法人設立DAY：新規投資面談・既存投資先支援・法人設立実習",
       theme: "午前は新規投資・既存投資先支援の2大面談ロープレ、午後は法人設立の基礎と初期資本政策シミュレーション実習",
       badge: "ロープレ＆法人設立実習",
       badge_type: "work",
-      location: "六本木オフィス（ランチ：ソウルフード巡り②）",
+      location: "六本木オフィス：ビルの5B（ランチ：ソウルフード巡り②）",
+      map_links: [
+        { label: "六本木オフィス（ビルの5B）", url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79" }
+      ],
       short_desc: "ロープレ①新規投資面談 ／ ロープレ②既存投資先支援 ／ 法人設立の基礎・初期資本政策実習",
       summary: "午前は新規投資面談・既存投資先支援の2大ロープレを実践し、午後は株式会社の設立基礎（定款・登記）と初期資本政策シミュレーションを実習します。",
       timeline: [
@@ -229,22 +264,25 @@ window.INTERN_DATA = {
       day_code: "DAY 3",
       date: "12月15日（火）",
       hours: "14:00〜18:00",
-      meeting_time: "14:00 Hive Shibuya 集合（午前中はプログラムなし）",
-      title: "アポ面談同席DAY：新規・既存投資先のアポ面談に参加（Hive Shibuya）",
-      theme: "14:00〜18:00の大枠で、Hive Shibuyaにて新規投資検討先・既存投資先とのリアルなアポ面談に同席・参加",
-      badge: "Hive Shibuya・面談参加",
+      meeting_time: "14:00 HIVE SHIBUYA（Magnet 3F＆4F）集合",
+      title: "アポ面談同席DAY：新規・既存投資先のアポ面談に参加（HIVE SHIBUYA）",
+      theme: "14:00〜18:00の大枠で、HIVE SHIBUYAにて新規投資検討先・既存投資先とのリアルなアポ面談に同席・参加",
+      badge: "HIVE SHIBUYA・面談参加",
       badge_type: "milestone",
-      location: "Hive Shibuya",
-      short_desc: "午前なし ／ 14:00〜18:00 Hive Shibuyaにて新規・既存投資先のアポ面談に実際に参加",
-      summary: "午前中はプログラムなし。14:00〜18:00の大枠で、Hive Shibuyaにて新規・既存投資先との実際のアポ面談に参加します（何時にどの企業と面談するかの詳細は順次確定）。",
+      location: "HIVE SHIBUYA：Magnet 3F＆4F",
+      map_links: [
+        { label: "HIVE SHIBUYA（Magnet 3F＆4F）", url: "https://maps.app.goo.gl/DkVZoddnvBk5gi2W8" }
+      ],
+      short_desc: "午前なし ／ 14:00〜18:00 HIVE SHIBUYA（Magnet 3F＆4F）にて新規・既存投資先のアポ面談に実際に参加",
+      summary: "午前中はプログラムなし。14:00〜18:00の大枠で、HIVE SHIBUYA（Magnet 3F＆4F）にて新規・既存投資先との実際のアポ面談に参加します（何時にどの企業と面談するかの詳細は順次確定）。",
       timeline: [
         {
           time: "14:00〜18:00",
-          title: "新規・既存投資先のアポ面談に実際に参加（＠Hive Shibuya）",
+          title: "新規・既存投資先のアポ面談に実際に参加（＠HIVE SHIBUYA）",
           tag: "アポ面談参加",
           highlight: true,
           details: [
-            "場所：Hive Shibuya（14:00集合）",
+            "場所：HIVE SHIBUYA（Magnet 3F＆4F ／ 14:00集合）",
             "14:00〜18:00の大枠を確保し、新規投資検討先・既存投資先との実際の面談に同席・参加",
             "※何時にどこと話すかの詳細スケジュールは今後確定します"
           ]
@@ -261,12 +299,16 @@ window.INTERN_DATA = {
       day_code: "DAY 4",
       date: "12月17日（木）",
       hours: "9:00〜18:00",
-      meeting_time: "9:00 集合",
+      meeting_time: "9:00 六本木オフィス（ビルの5B）集合",
       title: "VC実務＆投資先訪問DAY：創志荘イベント・Meltly・日本トレカセンター訪問",
       theme: "LP会議・投資委員会ロープレ、創志荘ロールアップ議論、Meltly＆日本トレカセンター訪問と総括",
       badge: "最終日・創志荘＆訪問2社",
       badge_type: "milestone",
-      location: "六本木 → 本郷・創志荘 → Meltly → 日本トレカセンター → 六本木オフィス",
+      location: "六本木オフィス（ビルの5B）→ 創志荘 → Meltly → 日本トレカセンター → 六本木オフィス",
+      map_links: [
+        { label: "六本木オフィス（ビルの5B）", url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79" },
+        { label: "創志荘", url: "https://maps.app.goo.gl/sSUiYwFtf453LdzM8" }
+      ],
       short_desc: "ロープレ③LP会議・④投資委員会 ／ 創志荘パネル ／ Meltly・日本トレカセンター訪問＆比較総括",
       summary: "LP会議・投資委員会ロープレの後、創志荘イベントと投資先2社（Meltly・日本トレカセンター）を訪問し4日間を総括します。",
       timeline: [
@@ -510,6 +552,8 @@ window.INTERN_DATA = {
       location: "本郷・創志荘（11:30移動開始）",
       name: "ロールアップ起業家が語る『買って、束ねて、伸ばす』経営",
       image_url: "soshiso-event.png?v=2",
+      map_url: "https://maps.app.goo.gl/sSUiYwFtf453LdzM8",
+      map_embed_url: "https://maps.google.com/maps?q=35.7159573,139.7623844+(%E5%89%B5%E5%BF%97%E8%8D%98)&hl=ja&z=16&output=embed",
       summary_head: "登壇者プロフィール＆ディスカッション内容",
       company_profile: [
         { label: "テーマ", value: "起業家3人が、案件の見つけ方から買った後の経営、資金の作り方までを本音で語る" },
@@ -532,6 +576,8 @@ window.INTERN_DATA = {
       day_label: "DAY 4｜12/17（木）14:00〜15:00",
       location: "東京都文京区本郷2-26-9 NOVEL WORK Hongo 3階（創志荘からランチ兼移動）",
       name: "Meltly株式会社（メルトリー）",
+      map_url: "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%9C%AC%E9%83%B72-26-9+NOVEL+WORK+Hongo",
+      map_embed_url: "https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%9C%AC%E9%83%B72-26-9+NOVEL+WORK+Hongo&hl=ja&z=16&output=embed",
       company_profile: [
         { label: "会社名", value: "Meltly株式会社（Meltly Inc.）" },
         { label: "設立", value: "2022年2月（東京大学発AIスタートアップ）" },
@@ -566,6 +612,8 @@ window.INTERN_DATA = {
       day_label: "DAY 4｜12/17（木）15:30〜16:30",
       location: "東京都中央区日本橋大伝馬町13-7 日本橋大富ビル 2F/3F（Meltlyから移動）",
       name: "株式会社日本トレカセンター",
+      map_url: "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E4%BC%9D%E9%A6%AC%E7%94%BA13-7+%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E5%AF%8C%E3%83%93%E3%83%AB",
+      map_embed_url: "https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E4%BC%9D%E9%A6%AC%E7%94%BA13-7+%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E5%AF%8C%E3%83%93%E3%83%AB&hl=ja&z=16&output=embed",
       company_profile: [
         { label: "会社名", value: "株式会社日本トレカセンター" },
         { label: "設立", value: "2023年4月" },
