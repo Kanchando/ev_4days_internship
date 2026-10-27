@@ -11,7 +11,7 @@ window.INTERN_DATA = {
       {
         keyword: "DAY 1｜12/8 (Tue)",
         title: "座学DAY：VC・スタートアップの歴史とEV",
-        description: "世界と日本のスタートアップ史、太河さん・バタラさんゲストセッション、村上さん担当のリアルMTG同席、シードVC実務の全体像を習得します。"
+        description: "世界と日本のスタートアップ史、村上さん担当のリアルMTG同席、シードVC実務の全体像を習得します。"
       },
       {
         keyword: "DAY 2｜12/10 (Thu)",
@@ -44,8 +44,8 @@ window.INTERN_DATA = {
       badge: "座学＆面談同席",
       badge_type: "lecture",
       location: "六本木オフィス（ランチ：ソウルフード巡り①）",
-      short_desc: "世界・日本のVC史 ／ 村上さんMTG同席 ／ 太河さん・バタラさんゲスト講話 ／ シードVC実務解説",
-      summary: "世界・日本のスタートアップ史とEVの投資スタイルを学び、実際の面談同席とゲスト講話でシードVCの全体像を掴みます。",
+      short_desc: "世界・日本のVC史 ／ 村上さんMTG同席 ／ 日本のスタートアップと産業 ／ シードVC実務解説",
+      summary: "世界・日本のスタートアップ史とEVの投資スタイルを学び、実際の面談同席や講義でシードVCの全体像を掴みます。",
       timeline: [
         {
           time: "10:45〜11:15",
@@ -92,12 +92,9 @@ window.INTERN_DATA = {
         {
           time: "15:00〜15:45",
           title: "日本を代表するスタートアップと日本のVC・産業",
-          tag: "ゲスト講話",
+          tag: "座学",
           doc_id: "doc-day1-3",
-          highlight: true,
-          details: [
-            "ゲスト：太河さん、バタラさん"
-          ]
+          details: []
         },
         {
           time: "15:45〜16:45",
@@ -130,7 +127,7 @@ window.INTERN_DATA = {
         "世界・日本のVC史とEVの投資スタイルの理解",
         "DAY 2 ソーシングに向けた視点の整理"
       ],
-      people: "村上さん ／ ゲスト：太河さん、バタラさん"
+      people: "村上さん"
     },
     {
       day: 2,
@@ -464,11 +461,10 @@ window.INTERN_DATA = {
     {
       id: "doc-day1-3",
       day: 1,
-      category: "DAY 1｜ゲスト講話資料",
+      category: "DAY 1｜座学資料③",
       day_label: "12月8日（火）15:00〜15:45",
-      title: "日本を代表するスタートアップと日本のVC・産業（太河さん・バタラさん）",
+      title: "日本を代表するスタートアップと日本のVC・産業",
       topics: [
-        "ゲスト：松山 太河 さん、衛藤 バタラ さん",
         "日本を代表するスタートアップの軌跡とVC・産業の関わり"
       ],
       embed_url: "",
@@ -478,7 +474,7 @@ window.INTERN_DATA = {
     {
       id: "doc-day1-4",
       day: 1,
-      category: "DAY 1｜座学資料③",
+      category: "DAY 1｜座学資料④",
       day_label: "12月8日（火）15:45〜16:45",
       title: "East Venturesの歴史・役割・投資スタイル",
       topics: [
@@ -638,20 +634,8 @@ window.INTERN_DATA = {
     }
   ],
 
-  // East Ventures メンバー（全8名）
+  // East Ventures メンバー（全6名）
   key_people: [
-    {
-      name: "松山 太河",
-      x_url: null,
-      x_handle: null,
-      roles: ["East Ventures創業者"]
-    },
-    {
-      name: "衛藤 バタラ",
-      x_url: null,
-      x_handle: null,
-      roles: ["East Ventures創業者"]
-    },
     {
       name: "金子 剛士",
       x_url: "https://x.com/evkaneko",
