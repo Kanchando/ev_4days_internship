@@ -264,7 +264,7 @@
       <!-- 日別資料フィルターピル -->
       <div class="filter-pills-bar">
         <button type="button" class="filter-pill-btn ${docDayFilter === 'all' ? 'active' : ''}" data-doc-day-filter="all">すべて表示（${DATA.workshops.length}）</button>
-        ${[1, 2, 3, 4].map(dNum => {
+        ${[1, 2, 3, 4].filter(dNum => DATA.workshops.some(w => w.day === dNum)).map(dNum => {
           const cnt = DATA.workshops.filter(w => w.day === dNum).length;
           return `
             <button type="button" class="filter-pill-btn ${String(docDayFilter) === String(dNum) ? 'active' : ''}" data-doc-day-filter="${dNum}">
