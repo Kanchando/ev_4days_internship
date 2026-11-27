@@ -3,10 +3,10 @@ window.INTERN_DATA = {
     title: "East Ventures",
     subtitle: "4-Days Winter Internship Portal",
     program_name: "East Ventures 4日間インターンシップ プログラム（2026年12月）",
-    welcome_message: "VC・スタートアップの歴史から、4大ロープレ＆法人設立実習、新規・既存投資先アポ面談への同席、創志荘イベント・投資先2社訪問まで、4日間の全スケジュールと資料をまとめたポータルです。",
+    welcome_message: "VC・スタートアップの歴史から、4大ロープレ、DeNAカンファレンス、法人設立実習＆アポ面談同席、創志荘イベント・投資先2社訪問まで、4日間の全スケジュールと資料をまとめたポータルです。",
     duration: "全4日間｜12/8(火)・12/10(木)・12/15(火)・12/17(木)",
-    location: "六本木オフィス ／ Hive Shibuya ／ 本郷・創志荘 ／ 投資先各社",
-    hours_summary: "DAY 1：10:45〜18:00 ／ DAY 2・4：9:00〜18:00 ／ DAY 3：14:00〜18:00",
+    location: "六本木オフィス ／ ベルサール新宿南口 ／ Hive Shibuya ／ 本郷・創志荘 ／ 投資先各社",
+    hours_summary: "DAY 1：10:45〜18:00 ／ DAY 2：9:00〜17:00（17:30〜懇親会） ／ DAY 3：11:00〜18:00 ／ DAY 4：9:00〜18:00",
     pillars: [
       {
         keyword: "DAY 1｜12/8 (Tue)",
@@ -15,13 +15,13 @@ window.INTERN_DATA = {
       },
       {
         keyword: "DAY 2｜12/10 (Thu)",
-        title: "ロープレ＆法人設立DAY",
-        description: "午前は「新規投資面談」「既存投資先支援」の2大ロープレを実施。午後は株式会社の設立基礎（定款・登記）と初期資本政策シミュレーションを実習します。"
+        title: "ロープレ＆DeNAカンファレンスDAY",
+        description: "午前は「新規投資面談」「既存投資先支援」の2大ロープレを実施（11:30まで）。午後はベルサール新宿南口へ移動し、「DeNA Delight Conference with Startups」（a16z、南場さん、佐俣アンリさん等登壇）に全員で参加します。"
       },
       {
         keyword: "DAY 3｜12/15 (Tue)",
-        title: "アポ面談同席DAY：新規・既存投資先のアポ面談に参加（Hive Shibuya）",
-        description: "午前中はプログラムなし。14:00〜18:00の大枠で、Hive Shibuyaにて新規・既存投資先との実際のアポ面談に同席・参加します（詳細は順次確定）。"
+        title: "法人設立＆アポ面談同席DAY（HIVE SHIBUYA）",
+        description: "HIVE SHIBUYAにて、午前は株式会社の設立基礎（定款・登記）と初期資本政策シミュレーションを実習。午後は14:00〜18:00の大枠で、新規・既存投資先との実際のアポ面談に同席・参加します（詳細は順次確定）。"
       },
       {
         keyword: "DAY 4｜12/17 (Thu)",
@@ -34,16 +34,25 @@ window.INTERN_DATA = {
         id: "venue-roppongi",
         name: "六本木オフィス",
         floor: "ビルの5B",
-        days_badge: "DAY 1・DAY 2・DAY 4",
+        days_badge: "DAY 1・DAY 2（午前）・DAY 4",
         address: "〒106-0032 東京都港区六本木7-3-12 六本木インターナショナル・ビル 5B",
         map_url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79",
-        map_embed_url: "https://maps.google.com/maps?q=35.6659332,139.728456+(%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%83%BB%E3%83%93%E3%83%AB+5B)&hl=ja&z=16&output=embed"
+        map_embed_url: "https://maps.google.com/maps?q=35.6659332,139.728456+(%E5%85%AD%E6%9C%A8%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%83%BB%E3%83%93%E3%83%AB+5B)&hl=ja&z=16&output=embed"
+      },
+      {
+        id: "venue-bellesalle",
+        name: "ベルサール新宿南口",
+        floor: "DeNAカンファレンス会場",
+        days_badge: "DAY 2（12:35〜17:00）",
+        address: "〒151-0051 東京都渋谷区千駄ヶ谷5-31-11 ベルサール新宿南口",
+        map_url: "https://www.google.com/maps/search/?api=1&query=%E3%83%99%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%AB%E6%96%B0%E5%AE%BF%E5%8D%97%E5%8F%A3",
+        map_embed_url: "https://maps.google.com/maps?q=%E3%83%99%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%AB%E6%96%B0%E5%AE%BF%E5%8D%97%E5%8F%A3&hl=ja&z=16&output=embed"
       },
       {
         id: "venue-hive",
         name: "HIVE SHIBUYA",
         floor: "Magnet 3F＆4F",
-        days_badge: "DAY 3（14:00集合）",
+        days_badge: "DAY 3（11:00集合）",
         address: "東京都渋谷区神南1-23-10 MAGNET by SHIBUYA109 3F＆4F",
         map_url: "https://maps.app.goo.gl/DkVZoddnvBk5gi2W8",
         map_embed_url: "https://maps.google.com/maps?q=35.6597925,139.7009365+(MAGNET+by+SHIBUYA+109)&hl=ja&z=16&output=embed"
@@ -165,18 +174,19 @@ window.INTERN_DATA = {
       day: 2,
       day_code: "DAY 2",
       date: "12月10日（木）",
-      hours: "9:00〜18:00",
+      hours: "9:00〜17:00（17:30〜懇親会）",
       meeting_time: "9:00 六本木オフィス（ビルの5B）集合",
-      title: "ロープレ＆法人設立DAY：新規投資面談・既存投資先支援・法人設立実習",
-      theme: "午前は新規投資・既存投資先支援の2大面談ロープレ、午後は法人設立の基礎と初期資本政策シミュレーション実習",
-      badge: "ロープレ＆法人設立実習",
+      title: "ロープレ＆DeNAカンファレンスDAY：新規投資面談・既存先支援・DeNA Delight Conference",
+      theme: "午前は新規投資・既存投資先支援の2大面談ロープレ、午後は「DeNA Delight Conference with Startups」に参加",
+      badge: "ロープレ＆DeNAイベント",
       badge_type: "work",
-      location: "六本木オフィス：ビルの5B（ランチ：ソウルフード巡り②）",
+      location: "六本木オフィス（ビルの5B）→ ベルサール新宿南口",
       map_links: [
-        { label: "六本木オフィス（ビルの5B）", url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79" }
+        { label: "六本木オフィス（ビルの5B）", url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79" },
+        { label: "ベルサール新宿南口", url: "https://www.google.com/maps/search/?api=1&query=%E3%83%99%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%AB%E6%96%B0%E5%AE%BF%E5%8D%97%E5%8F%A3" }
       ],
-      short_desc: "ロープレ①新規投資面談 ／ ロープレ②既存投資先支援 ／ 法人設立の基礎・初期資本政策実習",
-      summary: "午前は新規投資面談・既存投資先支援の2大ロープレを実践し、午後は株式会社の設立基礎（定款・登記）と初期資本政策シミュレーションを実習します。",
+      short_desc: "ロープレ①新規投資面談 ／ ロープレ②既存投資先支援（11:30まで） ／ DeNA Delight Conference参加（12:35〜）",
+      summary: "午前は新規投資面談・既存投資先支援の2大ロープレを実施（11:30終了）。午後はベルサール新宿南口へ移動し、「DeNA Delight Conference with Startups」に全員で参加します。",
       timeline: [
         {
           time: "9:00〜10:15",
@@ -190,7 +200,7 @@ window.INTERN_DATA = {
           ]
         },
         {
-          time: "10:15〜12:00",
+          time: "10:15〜11:30",
           title: "ロープレ②：既存投資先支援",
           tag: "ロープレ②",
           highlight: true,
@@ -198,22 +208,76 @@ window.INTERN_DATA = {
             "投資後の事業進捗確認",
             "経営課題の整理",
             "次回ラウンドに向けた支援",
-            "起業家とのコミュニケーション"
+            "※11:30で終了し、DeNAイベント会場へ移動"
           ]
         },
         {
-          time: "12:00〜13:15",
-          title: "ランチ：ソウルフード巡り②",
-          tag: "ランチ",
-          details: []
+          time: "11:30〜12:30",
+          title: "ベルサール新宿南口へ移動／ランチ",
+          tag: "移動・ランチ",
+          details: [
+            "六本木からベルサール新宿南口へ移動",
+            "会場近くで昼食",
+            "※12:00開場 ／ 12:30開始"
+          ]
         },
         {
-          time: "13:15〜14:00",
-          title: "法人設立の基礎",
-          tag: "座学",
-          doc_id: "doc-day2-1",
+          time: "12:35〜17:00",
+          title: "DeNA Delight Conference with Startups 参加",
+          tag: "カンファレンス",
+          highlight: true,
+          image_url: "dena-conference.jpg",
           details: [
-            "株式会社",
+            "会場：ベルサール新宿南口（12:00開場／12:30開始）",
+            "12:35〜13:15｜AIネイティブな組織のつくり方（メルカリ 木村俊也 氏 × DeNA 陶山拓也 氏 × 住吉政一郎 氏）",
+            "13:15〜13:55｜a16zは日本の何に賭けるのか（a16z GP Martin Casado 氏 × DeNA 南場智子 氏 × 住吉政一郎 氏）",
+            "14:10〜14:50｜IPOだけが出口じゃない ― M&AとCVCを「味方にできる」起業家の条件（ANRI 佐俣アンリ 氏 × DeNA 南場智子 氏 × 住吉政一郎 氏）",
+            "15:00〜15:40｜DeNAを出て、上場まで（ミラティブ 赤川隼一 氏 × ベースフード 橋本舜 氏 × DeNA 南場智子 氏）",
+            "15:50〜16:35｜「大きく張る」勝負をどう決めるか（newmo 青柳直樹 氏 × DeNA 南場智子 氏 × Kiyo（小林清剛）氏）",
+            "16:45〜17:00｜Closing（DeNA 南場智子 氏）",
+            "※17:30〜 懇親会 Mini Session（エンタメ最前線／プロダクトUX）"
+          ]
+        },
+        {
+          time: "17:00〜18:00",
+          title: "振り返り・総括／解散（または懇親会参加）",
+          tag: "振り返り",
+          details: [
+            "DeNAイベントでのインサイト振り返り",
+            "次回（DAY 3）の事前案内"
+          ]
+        }
+      ],
+      key_outputs: [
+        "新規投資面談・既存投資先支援ロープレの実践と振り返り",
+        "国内トップスタートアップ・VC（a16z・ANRI・メルカリ・ミラティブ・newmo等）の最新経営・投資トレンド体感"
+      ],
+      people: "EVメンター陣 ／ DeNAカンファレンス登壇陣"
+    },
+    {
+      day: 3,
+      day_code: "DAY 3",
+      date: "12月15日（火）",
+      hours: "11:00〜18:00",
+      meeting_time: "11:00 HIVE SHIBUYA（Magnet 3F＆4F）集合",
+      title: "法人設立実習＆アポ面談同席DAY（HIVE SHIBUYA）",
+      theme: "午前は法人設立の基礎・初期資本政策シミュレーション実習、午後は新規・既存投資先とのリアルアポ面談に同席",
+      badge: "法人設立＆面談参加",
+      badge_type: "milestone",
+      location: "HIVE SHIBUYA：Magnet 3F＆4F",
+      map_links: [
+        { label: "HIVE SHIBUYA（Magnet 3F＆4F）", url: "https://maps.app.goo.gl/DkVZoddnvBk5gi2W8" }
+      ],
+      short_desc: "11:00集合 ／ 法人設立の基礎・初期資本政策実習 ／ 14:00〜18:00 新規・既存投資先のアポ面談に実際に参加",
+      summary: "HIVE SHIBUYAにて、午前は株式会社の設立基礎（定款・登記）と初期資本政策シミュレーションを実習。午後は14:00〜18:00の大枠で新規・既存投資先との実際のアポ面談に同席・参加します（面談の詳細は順次確定）。",
+      timeline: [
+        {
+          time: "11:00〜11:45",
+          title: "集合／法人設立の基礎",
+          tag: "座学",
+          doc_id: "doc-day3-1",
+          details: [
+            "株式会社の仕組み",
             "資本金",
             "株主構成",
             "機関設計",
@@ -222,8 +286,8 @@ window.INTERN_DATA = {
           ]
         },
         {
-          time: "14:00〜16:00",
-          title: "法人設立実習",
+          time: "11:45〜13:00",
+          title: "法人設立実習（初期資本政策シミュレーション）",
           tag: "実践ワーク",
           highlight: true,
           details: [
@@ -233,64 +297,29 @@ window.INTERN_DATA = {
           ]
         },
         {
-          time: "16:00〜16:15",
-          title: "休憩",
-          tag: "休憩",
-          details: []
+          time: "13:00〜14:00",
+          title: "ランチ休憩（渋谷）",
+          tag: "ランチ",
+          details: [
+            "14:00からのアポ面談同席に向けて準備"
+          ]
         },
-        {
-          time: "16:15〜17:30",
-          title: "夏のインターンプログラム・ダイジェスト版",
-          tag: "座学",
-          doc_id: "doc-day2-2",
-          details: []
-        },
-        {
-          time: "17:30〜18:00",
-          title: "ロープレ・実習のフィードバック／1日の振り返り",
-          tag: "振り返り",
-          details: []
-        }
-      ],
-      key_outputs: [
-        "新規投資面談・既存投資先支援ロープレの実践と振り返り",
-        "仮想企業の定款主要項目・機関設計・株主構成案",
-        "初期資本政策の簡易シミュレーションシート"
-      ],
-      people: "EVメンター陣"
-    },
-    {
-      day: 3,
-      day_code: "DAY 3",
-      date: "12月15日（火）",
-      hours: "14:00〜18:00",
-      meeting_time: "14:00 HIVE SHIBUYA（Magnet 3F＆4F）集合",
-      title: "アポ面談同席DAY：新規・既存投資先のアポ面談に参加（HIVE SHIBUYA）",
-      theme: "14:00〜18:00の大枠で、HIVE SHIBUYAにて新規投資検討先・既存投資先とのリアルなアポ面談に同席・参加",
-      badge: "HIVE SHIBUYA・面談参加",
-      badge_type: "milestone",
-      location: "HIVE SHIBUYA：Magnet 3F＆4F",
-      map_links: [
-        { label: "HIVE SHIBUYA（Magnet 3F＆4F）", url: "https://maps.app.goo.gl/DkVZoddnvBk5gi2W8" }
-      ],
-      short_desc: "午前なし ／ 14:00〜18:00 HIVE SHIBUYA（Magnet 3F＆4F）にて新規・既存投資先のアポ面談に実際に参加",
-      summary: "午前中はプログラムなし。14:00〜18:00の大枠で、HIVE SHIBUYA（Magnet 3F＆4F）にて新規・既存投資先との実際のアポ面談に参加します（何時にどの企業と面談するかの詳細は順次確定）。",
-      timeline: [
         {
           time: "14:00〜18:00",
           title: "新規・既存投資先のアポ面談に実際に参加（＠HIVE SHIBUYA）",
           tag: "アポ面談参加",
           highlight: true,
           details: [
-            "場所：HIVE SHIBUYA（Magnet 3F＆4F ／ 14:00集合）",
+            "場所：HIVE SHIBUYA（Magnet 3F＆4F）",
             "14:00〜18:00の大枠を確保し、新規投資検討先・既存投資先との実際の面談に同席・参加",
             "※何時にどこと話すかの詳細スケジュールは今後確定します"
           ]
         }
       ],
       key_outputs: [
-        "新規・既存投資先とのリアルなアポ面談への同席・体感",
-        "実際の起業家との議論を通じた投資評価・支援の視点整理"
+        "仮想企業の定款主要項目・機関設計・株主構成案",
+        "初期資本政策の簡易シミュレーションシート",
+        "新規・既存投資先とのリアルなアポ面談への同席・体感"
       ],
       people: "EV投資担当メンバー"
     },
@@ -502,27 +531,14 @@ window.INTERN_DATA = {
       slides: []
     },
     {
-      id: "doc-day2-1",
-      day: 2,
-      category: "DAY 2｜座学資料①",
-      day_label: "12月10日（木）13:15〜14:00",
+      id: "doc-day3-1",
+      day: 3,
+      category: "DAY 3｜座学資料",
+      day_label: "12月15日（火）11:00〜11:45",
       title: "法人設立の基礎（株式会社・資本金・株主構成・機関設計・定款・登記）",
       topics: [
         "株式会社の仕組み・資本金・株主構成・機関設計・定款・登記の基礎",
-        "14:00〜16:00「法人設立実習（初期資本政策シミュレーション）」で使用"
-      ],
-      embed_url: "",
-      file_url: "",
-      slides: []
-    },
-    {
-      id: "doc-day2-2",
-      day: 2,
-      category: "DAY 2｜座学資料②",
-      day_label: "12月10日（木）16:15〜17:30",
-      title: "夏のインターンプログラム・ダイジェスト版",
-      topics: [
-        "サマーインターンプログラムの主要コンテンツ・エッセンス共有"
+        "11:45〜13:00「法人設立実習（初期資本政策シミュレーション）」で使用"
       ],
       embed_url: "",
       file_url: "",
@@ -545,6 +561,34 @@ window.INTERN_DATA = {
 
   // 創志荘イベント・投資先訪問2社一覧
   visits: [
+    {
+      id: "visit-dena",
+      type: "カンファレンス・特別イベント",
+      day_label: "DAY 2｜12/10（木）12:35〜17:00（12:00開場）",
+      location: "ベルサール新宿南口（〒151-0051 東京都渋谷区千駄ヶ谷5-31-11）",
+      name: "DeNA Delight Conference with Startups",
+      image_url: "dena-conference.jpg",
+      map_url: "https://www.google.com/maps/search/?api=1&query=%E3%83%99%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%AB%E6%96%B0%E5%AE%BF%E5%8D%97%E5%8F%A3",
+      map_embed_url: "https://maps.google.com/maps?q=%E3%83%99%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%AB%E6%96%B0%E5%AE%BF%E5%8D%97%E5%8F%A3&hl=ja&z=16&output=embed",
+      summary_head: "タイムテーブル＆主要セッション概要",
+      company_profile: [
+        { label: "イベント名", value: "DeNA Delight Conference with Startups" },
+        { label: "主催", value: "株式会社ディー・エヌ・エー（DeNA）" },
+        { label: "日時", value: "2026年12月10日（木）12:00開場／12:30開始〜17:00（17:30懇親会）" },
+        { label: "会場", value: "ベルサール新宿南口" },
+        { label: "参加趣旨", value: "国内メガベンチャー＆トップVC（a16z・ANRI等）と起業家による最先端カンファレンスへの参加" }
+      ],
+      business_summary: [
+        "12:35〜「AIネイティブな組織のつくり方」：メルカリ 木村俊也 氏 × DeNA 陶山拓也 氏 × 住吉政一郎 氏",
+        "13:15〜「a16zは日本の何に賭けるのか」：世界トップVC a16z GP Martin Casado 氏 × DeNA 南場智子 氏 × 住吉政一郎 氏",
+        "14:10〜「IPOだけが出口じゃない」：ANRI 佐俣アンリ 氏 × DeNA 南場智子 氏 × 住吉政一郎 氏",
+        "15:00〜「DeNAを出て、上場まで」：ミラティブ 赤川隼一 氏 × ベースフード 橋本舜 氏 × DeNA 南場智子 氏",
+        "15:50〜「『大きく張る』勝負をどう決めるか」：newmo 青柳直樹 氏 × DeNA 南場智子 氏 × Kiyo（小林清剛）氏",
+        "16:45〜 Closing：DeNA 南場智子 氏 ／ 17:30〜 懇親会 Mini Session"
+      ],
+      embed_url: "",
+      materials: []
+    },
     {
       id: "visit-soshiso",
       type: "創志荘イベント・パネルディスカッション",

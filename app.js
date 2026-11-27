@@ -213,6 +213,12 @@
                         ${slot.tag ? `<span class="detail-block-tag">${escapeHtml(slot.tag)}</span>` : ''}
                       </div>
                       <div class="detail-block-title">${escapeHtml(slot.title)}</div>
+                      ${slot.image_url ? `
+                        <div class="zoomable-img-wrap" data-zoom-src="${escapeHtml(slot.image_url)}" data-zoom-alt="${escapeHtml(slot.title)}" style="margin: 10px 0;">
+                          <img src="${escapeHtml(slot.image_url)}" alt="${escapeHtml(slot.title)}" style="width: 100%; height: auto; display: block; border-radius: 8px;">
+                          <span class="zoomable-img-badge">🔍 クリックして拡大</span>
+                        </div>
+                      ` : ''}
                       ${slot.details && slot.details.length > 0 ? `
                         <ul class="detail-block-summary-list" style="margin-bottom: 0;">
                           ${slot.details.map(det => `<li>${escapeHtml(det)}</li>`).join('')}
@@ -244,6 +250,14 @@
     `;
 
     app.innerHTML = html;
+
+    // スライド・イベント画像クリックで拡大
+    app.querySelectorAll('[data-zoom-src]').forEach(wrap => {
+      wrap.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openLightbox(wrap.getAttribute('data-zoom-src'), wrap.getAttribute('data-zoom-alt'));
+      });
+    });
 
     // 4日間カードタップでスクロール
     app.querySelectorAll('[data-jump-day]').forEach(card => {
@@ -429,8 +443,8 @@
     let html = `
       <div class="study-hero" style="padding: 16px 18px; margin-bottom: 16px;">
         <div class="study-hero-meta" style="margin-bottom: 6px;">
-          <span class="study-badge">DAY 4｜12月17日（木）開催</span>
-          <span class="study-badge amber">イベント ＋ 投資先2社訪問</span>
+          <span class="study-badge">DAY 2 & DAY 4 開催</span>
+          <span class="study-badge amber">特別イベント ＋ 訪問2社</span>
         </div>
         <h1 style="font-family: var(--serif); font-size: 18.5px; font-weight: 800; color: var(--ink); margin-bottom: 2px;">
           訪問先・イベント一覧
