@@ -25,8 +25,8 @@ window.INTERN_DATA = {
       },
       {
         keyword: "DAY 4｜12/17 (Thu)",
-        title: "VC実務＆投資先訪問DAY：創志荘・Meltly・トレカ",
-        description: "LP会議・投資委員会ロープレの後、本郷・創志荘でのロールアップ経営パネル、Meltly・日本トレカセンターの2社連続訪問と4日間の総括。"
+        title: "VC実務＆投資先訪問DAY：創志荘・トレカ・Meltly",
+        description: "LP会議・投資委員会ロープレの後、本郷・創志荘でのロールアップ経営パネル、日本トレカセンター・Meltlyの2社連続訪問と4日間の総括。"
       }
     ],
     venues: [
@@ -300,17 +300,17 @@ window.INTERN_DATA = {
       date: "12月17日（木）",
       hours: "9:00〜18:00",
       meeting_time: "9:00 六本木オフィス（ビルの5B）集合",
-      title: "VC実務＆投資先訪問DAY：創志荘イベント・Meltly・日本トレカセンター訪問",
-      theme: "LP会議・投資委員会ロープレ、創志荘ロールアップ議論、Meltly＆日本トレカセンター訪問と総括",
+      title: "VC実務＆投資先訪問DAY：創志荘イベント・日本トレカセンター・Meltly訪問",
+      theme: "LP会議・投資委員会ロープレ、創志荘ロールアップ議論、日本トレカセンター＆Meltly訪問と総括",
       badge: "最終日・創志荘＆訪問2社",
       badge_type: "milestone",
-      location: "六本木オフィス（ビルの5B）→ 創志荘 → Meltly → 日本トレカセンター → 六本木オフィス",
+      location: "六本木オフィス（ビルの5B）→ 創志荘 → 日本トレカセンター → Meltly → 六本木オフィス",
       map_links: [
         { label: "六本木オフィス（ビルの5B）", url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79" },
         { label: "創志荘", url: "https://maps.app.goo.gl/sSUiYwFtf453LdzM8" }
       ],
-      short_desc: "ロープレ③LP会議・④投資委員会 ／ 創志荘パネル ／ Meltly・日本トレカセンター訪問＆比較総括",
-      summary: "LP会議・投資委員会ロープレの後、創志荘イベントと投資先2社（Meltly・日本トレカセンター）を訪問し4日間を総括します。",
+      short_desc: "ロープレ③LP会議・④投資委員会 ／ 創志荘パネル ／ 日本トレカセンター・Meltly訪問＆比較総括",
+      summary: "LP会議・投資委員会ロープレの後、創志荘イベントと投資先2社（日本トレカセンター・Meltly）を訪問し4日間を総括します。",
       timeline: [
         {
           time: "9:00〜10:00",
@@ -367,27 +367,28 @@ window.INTERN_DATA = {
         },
         {
           time: "13:00〜14:00",
-          title: "ランチ／Meltlyへ移動",
+          title: "ランチ／日本トレカセンターへ移動",
           tag: "ランチ・移動",
           details: [
             "イベント内容についての簡単な振り返り",
-            "移動中にMeltlyの事業・市場・投資背景を確認"
+            "移動中に日本トレカセンターの事業・市場・投資背景を確認"
           ]
         },
         {
           time: "14:00〜15:00",
-          title: "投資先① Meltly訪問",
+          title: "投資先① 日本トレカセンター訪問",
           tag: "投資先訪問①",
           highlight: true,
           details: [
             "事業説明",
             "オフィスツアー",
-            "AI事業、プロダクト、成長戦略についての質疑応答"
+            "経営陣との質疑応答",
+            "市場規模、競争優位性、成長戦略の確認"
           ]
         },
         {
           time: "15:00〜15:30",
-          title: "日本トレカセンターへ移動",
+          title: "Meltlyへ移動",
           tag: "移動",
           details: [
             "移動時間は30分で仮置き"
@@ -395,14 +396,13 @@ window.INTERN_DATA = {
         },
         {
           time: "15:30〜16:30",
-          title: "投資先② 日本トレカセンター訪問",
+          title: "投資先② Meltly訪問",
           tag: "投資先訪問②",
           highlight: true,
           details: [
             "事業説明",
             "オフィスツアー",
-            "経営陣との質疑応答",
-            "市場規模、競争優位性、成長戦略の確認"
+            "AI事業、プロダクト、成長戦略についての質疑応答"
           ]
         },
         {
@@ -421,10 +421,10 @@ window.INTERN_DATA = {
       ],
       key_outputs: [
         "LP会議（資料なし）＆ 投資委員会（ポイ活事業案）での意思決定",
-        "Meltly と 日本トレカセンター の比較分析・投資判断",
+        "日本トレカセンター と Meltly の比較分析・投資判断",
         "4日間を通じたVCへの理解の変化と今後の問いの言語化"
       ],
-      people: "荒井邦彦氏、深澤雄太氏、福村圭祐氏、伊藤健太氏、金子剛士 ／ Meltly経営陣 ／ 日本トレカセンター経営陣"
+      people: "荒井邦彦氏、深澤雄太氏、福村圭祐氏、伊藤健太氏、金子剛士 ／ 日本トレカセンター経営陣 ／ Meltly経営陣"
     }
   ],
 
@@ -571,10 +571,40 @@ window.INTERN_DATA = {
       materials: []
     },
     {
-      id: "visit-meltly",
-      type: "投資先訪問①（AI×サブカルチャー）",
+      id: "visit-toreca",
+      type: "投資先訪問①（トレカ・エンタメ型EC）",
       day_label: "DAY 4｜12/17（木）14:00〜15:00",
-      location: "東京都文京区本郷2-26-9 NOVEL WORK Hongo 3階（創志荘からランチ兼移動）",
+      location: "東京都中央区日本橋大伝馬町13-7 日本橋大富ビル 2F/3F（創志荘からランチ兼移動）",
+      name: "株式会社日本トレカセンター",
+      map_url: "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E4%BC%9D%E9%A6%AC%E7%94%BA13-7+%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E5%AF%8C%E3%83%93%E3%83%AB",
+      map_embed_url: "https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E4%BC%9D%E9%A6%AC%E7%94%BA13-7+%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E5%AF%8C%E3%83%93%E3%83%AB&hl=ja&z=16&output=embed",
+      company_profile: [
+        { label: "会社名", value: "株式会社日本トレカセンター" },
+        { label: "設立", value: "2023年4月" },
+        { label: "代表者", value: "代表取締役CEO 大山 敏浩" },
+        { label: "所在地", value: "東京都中央区日本橋大伝馬町13-7 日本橋大富ビル 2F/3F" },
+        { label: "事業領域", value: "ネットオリパ・トレーディングカードのエンタメ型ECプラットフォーム" }
+      ],
+      business_summary: [
+        "スマホ・PCから24時間365日いつでもトレーディングカードのオリジナルパック（オリパ）を引いて、その場で開封演出を楽しめる国内最大級のオンラインオリパサービス「日本トレカセンター」を企画・開発・運営",
+        "獲得したカードは自宅へのスピード配送（原則24時間以内発送体制）またはサイト内ポイント（コイン）への即時還元が可能。秋葉原での実店舗運営や自社買取・鑑定検品体制により高い信頼性を構築",
+        "ポケモンカード・ワンピースカード・遊戯王等を軸に急成長し、台湾・香港・アメリカなどグローバル展開も推進"
+      ],
+      embed_url: "",
+      materials: [
+        {
+          title: "日本トレカセンター 公式サイト",
+          badge: "OFFICIAL HP",
+          url: "https://japan-toreca.com/",
+          description: "https://japan-toreca.com/ — オンラインオリパサービスサイト"
+        }
+      ]
+    },
+    {
+      id: "visit-meltly",
+      type: "投資先訪問②（AI×サブカルチャー）",
+      day_label: "DAY 4｜12/17（木）15:30〜16:30",
+      location: "東京都文京区本郷2-26-9 NOVEL WORK Hongo 3階（日本トレカセンターから移動）",
       name: "Meltly株式会社（メルトリー）",
       map_url: "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%9C%AC%E9%83%B72-26-9+NOVEL+WORK+Hongo",
       map_embed_url: "https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%87%E4%BA%AC%E5%8C%BA%E6%9C%AC%E9%83%B72-26-9+NOVEL+WORK+Hongo&hl=ja&z=16&output=embed",
@@ -603,36 +633,6 @@ window.INTERN_DATA = {
           badge: "PRODUCT",
           url: "https://www.days-ai.com/",
           description: "https://www.days-ai.com/ — 主力プロダクト紹介"
-        }
-      ]
-    },
-    {
-      id: "visit-toreca",
-      type: "投資先訪問②（トレカ・エンタメ型EC）",
-      day_label: "DAY 4｜12/17（木）15:30〜16:30",
-      location: "東京都中央区日本橋大伝馬町13-7 日本橋大富ビル 2F/3F（Meltlyから移動）",
-      name: "株式会社日本トレカセンター",
-      map_url: "https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E4%BC%9D%E9%A6%AC%E7%94%BA13-7+%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E5%AF%8C%E3%83%93%E3%83%AB",
-      map_embed_url: "https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E4%BC%9D%E9%A6%AC%E7%94%BA13-7+%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%A4%A7%E5%AF%8C%E3%83%93%E3%83%AB&hl=ja&z=16&output=embed",
-      company_profile: [
-        { label: "会社名", value: "株式会社日本トレカセンター" },
-        { label: "設立", value: "2023年4月" },
-        { label: "代表者", value: "代表取締役CEO 大山 敏浩" },
-        { label: "所在地", value: "東京都中央区日本橋大伝馬町13-7 日本橋大富ビル 2F/3F" },
-        { label: "事業領域", value: "ネットオリパ・トレーディングカードのエンタメ型ECプラットフォーム" }
-      ],
-      business_summary: [
-        "スマホ・PCから24時間365日いつでもトレーディングカードのオリジナルパック（オリパ）を引いて、その場で開封演出を楽しめる国内最大級のオンラインオリパサービス「日本トレカセンター」を企画・開発・運営",
-        "獲得したカードは自宅へのスピード配送（原則24時間以内発送体制）またはサイト内ポイント（コイン）への即時還元が可能。秋葉原での実店舗運営や自社買取・鑑定検品体制により高い信頼性を構築",
-        "ポケモンカード・ワンピースカード・遊戯王等を軸に急成長し、台湾・香港・アメリカなどグローバル展開も推進"
-      ],
-      embed_url: "",
-      materials: [
-        {
-          title: "日本トレカセンター 公式サイト",
-          badge: "OFFICIAL HP",
-          url: "https://japan-toreca.com/",
-          description: "https://japan-toreca.com/ — オンラインオリパサービスサイト"
         }
       ]
     }
