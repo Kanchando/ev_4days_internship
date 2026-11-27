@@ -1,0 +1,4 @@
+Obsidian full-file backup verification
+Project: my site/intern-portal
+Nonce: 83dcdb52-ccf8-4565-8922-86081bead628
+Uncommitted source file, deliberately retained for restoration checks.

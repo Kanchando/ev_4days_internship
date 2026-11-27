@@ -482,6 +482,20 @@
               </div>
             ` : ''}
 
+            ${v.slides && v.slides.length > 0 ? `
+              <div style="display: flex; flex-direction: column; gap: 8px; margin: 10px 0;">
+                <div style="font-size: 12px; font-weight: 800; color: var(--ev-blue); margin-bottom: 2px;">
+                  📊 会社概要・事業スライド（クリックで拡大）
+                </div>
+                ${v.slides.map((sl, sIdx) => `
+                  <div class="zoomable-img-wrap" data-zoom-src="${escapeHtml(sl)}" data-zoom-alt="${escapeHtml(v.name)} スライド${sIdx + 1}">
+                    <img src="${escapeHtml(sl)}" alt="${escapeHtml(v.name)} スライド${sIdx + 1}" style="width: 100%; height: auto; display: block; border-radius: 8px;">
+                    <span class="zoomable-img-badge">🔍 スライド${sIdx + 1}（クリックして拡大）</span>
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+
             ${v.map_embed_url ? `
               <div style="margin: 10px 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); height: 175px; background: var(--soft);">
                 <iframe src="${escapeHtml(v.map_embed_url)}" style="width: 100%; height: 100%; border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

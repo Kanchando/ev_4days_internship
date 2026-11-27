@@ -78,28 +78,37 @@ window.INTERN_DATA = {
       hours: "10:45〜18:00",
       meeting_time: "10:45 六本木オフィス（ビルの5B）集合",
       title: "座学DAY：VC・スタートアップの歴史とEast Ventures",
-      theme: "世界・日本のスタートアップ史とシードVC実務の全体像を掴む",
+      theme: "自己紹介・情報収集術と世界・日本のスタートアップ史、シードVC実務の全体像を掴む",
       badge: "座学＆面談同席",
       badge_type: "lecture",
       location: "六本木オフィス：ビルの5B（ランチ：ソウルフード巡り①）",
       map_links: [
         { label: "六本木オフィス（ビルの5B）", url: "https://maps.app.goo.gl/gnCPiVB9PV8LzzU79" }
       ],
-      short_desc: "世界・日本のVC史 ／ 村上さんMTG同席 ／ 日本のスタートアップと産業 ／ シードVC実務解説",
-      summary: "世界・日本のスタートアップ史とEVの投資スタイルを学び、実際の面談同席や講義でシードVCの全体像を掴みます。",
+      short_desc: "EVメンバー詳細自己紹介＆情報収集術 ／ 世界・日本のVC史 ／ 村上さんMTG同席 ／ 実務解説",
+      summary: "オリエンテーション後、EVメンバー各自の詳細な自己紹介と情報収集術、世界・日本のVC史を学び、実際の面談同席や講義でシードVCの全体像を掴みます。",
       timeline: [
         {
           time: "10:45〜11:15",
-          title: "六本木オフィス（ビルの5B）集合／オリエンテーション、自己紹介、4日間のゴール設定",
+          title: "オリエンテーション（簡単な自己紹介、4日間の予定確認）",
           tag: "オリエン",
-          details: []
+          details: [
+            "六本木オフィス（ビルの5B）集合",
+            "簡単な自己紹介",
+            "4日間の予定・プログラム確認とゴール設定"
+          ]
         },
         {
           time: "11:15〜12:15",
-          title: "世界のスタートアップとVCの歴史",
-          tag: "座学",
+          title: "座学①：EVメンバー各自の詳細な自己紹介＆情報収集術",
+          tag: "座学①",
           doc_id: "doc-day1-1",
-          details: []
+          image_url: "slide-info-1.png",
+          details: [
+            "EVメンバー各自の詳細な自己紹介（キャリア背景・投資領域・担当役割）",
+            "シードVCとしての情報収集術（金子剛士さんスライド「効率よく情報を集め、学ぶ方法」全13枚）",
+            "主な情報収集経路（X・Discover・決算資料・書籍・Grok bot・友人スレッド）とインプット作法"
+          ]
         },
         {
           time: "12:15〜13:15",
@@ -109,10 +118,13 @@ window.INTERN_DATA = {
         },
         {
           time: "13:15〜14:00",
-          title: "世界における日本の立ち位置／日本のスタートアップ・VCの歴史",
-          tag: "座学",
+          title: "座学②：世界・日本のスタートアップとVCの歴史・立ち位置（旧座学①②集約）",
+          tag: "座学②",
           doc_id: "doc-day1-2",
-          details: []
+          details: [
+            "米国・世界のスタートアップとベンチャーキャピタルの歴史（米国VC誕生から現代まで）",
+            "世界における日本の立ち位置／日本のスタートアップ・VC史の変遷と今後の成長機会"
+          ]
         },
         {
           time: "14:00〜14:45",
@@ -165,11 +177,12 @@ window.INTERN_DATA = {
       ],
       key_outputs: [
         "4日間の個人ゴール設定",
-        "世界・日本のVC史とEVの投資スタイルの理解",
-        "DAY 2 ロープレ・法人設立実習に向けた視点の整理"
+        "シードVCの情報収集術・インプットスタイルの習得",
+        "世界・日本のVC史とEVの投資スタイルの理解"
       ],
-      people: "村上さん"
+      people: "村上さん、金子剛士さん、EVメンバー陣"
     },
+    
     {
       day: 2,
       day_code: "DAY 2",
@@ -385,6 +398,7 @@ window.INTERN_DATA = {
           title: "創志荘イベント／パネルディスカッション",
           tag: "創志荘イベント",
           highlight: true,
+          image_url: "soshiso-event.png",
           details: [
             "テーマ：「ロールアップ起業家が語る『買って、束ねて、伸ばす』経営」",
             "起業家3人が、案件の見つけ方から買った後の経営、資金の作り方までを本音で語る",
@@ -396,11 +410,15 @@ window.INTERN_DATA = {
         },
         {
           time: "13:00〜14:00",
-          title: "ランチ／日本トレカセンターへ移動",
-          tag: "ランチ・移動",
+          title: "ランチ／訪問先事前インプット（日本トレカセンター・Meltly）／移動",
+          tag: "事前資料・移動",
+          highlight: true,
+          image_url: "slide-startup-intro-1.png",
+          doc_id: "doc-day4-2",
           details: [
-            "イベント内容についての簡単な振り返り",
-            "移動中に日本トレカセンターの事業・市場・投資背景を確認"
+            "日本トレカセンター・Meltlyの投資先紹介資料（全7枚）を事前確認",
+            "創志荘イベントの振り返り＆ランチ",
+            "移動中に各社の事業・市場・投資背景をインプット（14:00 日本トレカセンター着）"
           ]
         },
         {
@@ -464,22 +482,40 @@ window.INTERN_DATA = {
       day: 1,
       category: "DAY 1｜座学資料①",
       day_label: "12月8日（火）11:15〜12:15",
-      title: "世界のスタートアップとVCの歴史",
+      title: "EVメンバー各自の詳細な自己紹介＆情報収集術",
       topics: [
-        "米国・世界のベンチャーキャピタル誕生から現代までの変遷",
-        "テクノロジーの波とスタートアップエコシステムの拡大"
+        "EVメンバー各自の詳細な自己紹介・キャリア背景・投資領域",
+        "シードVCとしての情報収集術（金子剛士さんスライド「効率よく情報を集め、学ぶ方法」全13枚）",
+        "主な情報収集経路（X・Discover・お気に入りサイト・決算資料・書籍・Grok bot・友人スレッド）",
+        "誰をフォローするかで情報の質が決まる／スタートアップに関わるならまず読むべきおすすめ本"
       ],
       embed_url: "",
       file_url: "",
-      slides: []
+      slides: [
+        "slide-info-1.png",
+        "slide-info-2.png",
+        "slide-info-3.png",
+        "slide-info-4.png",
+        "slide-info-5.png",
+        "slide-info-6.png",
+        "slide-info-7.png",
+        "slide-info-8.png",
+        "slide-info-9.png",
+        "slide-info-10.png",
+        "slide-info-11.png",
+        "slide-info-12.png",
+        "slide-info-13.png"
+      ]
     },
     {
       id: "doc-day1-2",
       day: 1,
       category: "DAY 1｜座学資料②",
       day_label: "12月8日（火）13:15〜14:00",
-      title: "世界における日本の立ち位置／日本のスタートアップ・VCの歴史",
+      title: "世界・日本のスタートアップとVCの歴史・立ち位置（旧座学①②集約）",
       topics: [
+        "米国・世界のベンチャーキャピタル誕生から現代までの変遷",
+        "テクノロジーの波とスタートアップエコシステムの拡大",
         "グローバル市場における日本のスタートアップエコシステムの現在地",
         "日本のスタートアップ・VC史の変遷と今後の成長機会"
       ],
@@ -556,6 +592,28 @@ window.INTERN_DATA = {
       embed_url: "",
       file_url: "",
       slides: []
+    },
+    {
+      id: "doc-day4-2",
+      day: 4,
+      category: "DAY 4｜投資先事前資料",
+      day_label: "12月17日（木）13:00〜14:00",
+      title: "EAST VENTURES 投資先紹介（日本トレカセンター／Meltly）",
+      topics: [
+        "日本トレカセンター：オンラインオリパ国内No.1、仕入れ・物流、月商約70億円への急成長と世界展開",
+        "Meltly：東大発AIスタートアップ、AIキャラアプリ「Days AI」、月間約19万人利用、シリーズA 5.4億円調達"
+      ],
+      embed_url: "",
+      file_url: "",
+      slides: [
+        "slide-startup-all-1.png",
+        "slide-startup-all-2.png",
+        "slide-startup-all-3.png",
+        "slide-startup-all-4.png",
+        "slide-startup-all-5.png",
+        "slide-startup-all-6.png",
+        "slide-startup-all-7.png"
+      ]
     }
   ],
 
@@ -617,6 +675,11 @@ window.INTERN_DATA = {
     {
       id: "visit-toreca",
       type: "投資先訪問①（トレカ・エンタメ型EC）",
+      slides: [
+        "slide-toreca-1.png",
+        "slide-toreca-2.png",
+        "slide-toreca-3.png"
+      ],
       day_label: "DAY 4｜12/17（木）14:00〜15:00",
       location: "東京都中央区日本橋大伝馬町13-7 日本橋大富ビル 2F/3F（創志荘からランチ兼移動）",
       name: "株式会社日本トレカセンター",
@@ -647,6 +710,11 @@ window.INTERN_DATA = {
     {
       id: "visit-meltly",
       type: "投資先訪問②（AI×サブカルチャー）",
+      slides: [
+        "slide-meltly-1.png",
+        "slide-meltly-2.png",
+        "slide-meltly-3.png"
+      ],
       day_label: "DAY 4｜12/17（木）15:30〜16:30",
       location: "東京都文京区本郷2-26-9 NOVEL WORK Hongo 3階（日本トレカセンターから移動）",
       name: "Meltly株式会社（メルトリー）",
